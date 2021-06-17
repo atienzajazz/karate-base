@@ -2,11 +2,11 @@ Feature: Search Deltek on Google
 
   Background:
 
-    * configure driver = { type: 'chrome' }
-  # Using the docker grid
-  # * configure driver = { type: 'chromedriver', start: false, webDriverUrl: 'http://localhost:4444/wd/hub' }
-  # using headless container
-  # * configure driverTarget = { docker: 'justinribeiro/chrome-headless', showDriverLog: true }
+    # * configure driver = { type: 'chrome' }
+    # Using the docker grid
+    # * configure driver = { type: 'chromedriver', start: false, webDriverUrl: 'http://localhost:4444/wd/hub' }
+    # using headless container
+    * configure driverTarget = { docker: 'justinribeiro/chrome-headless', showDriverLog: true }
 
   Scenario: try to login to github and then do a google search
 
