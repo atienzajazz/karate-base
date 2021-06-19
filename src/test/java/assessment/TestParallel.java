@@ -19,8 +19,7 @@ import net.masterthought.cucumber.ReportBuilder;
 public class TestParallel {
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:assessment/users").outputCucumberJson(true).tags("~@ignore")
-                .parallel(5);
+        Results results = Runner.path("classpath:assessment").outputCucumberJson(true).tags("~@ignore").parallel(5);
         generateReport(results.getReportDir());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
