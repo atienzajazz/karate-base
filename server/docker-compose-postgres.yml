@@ -1,0 +1,23 @@
+# docker-compose -p postgres-server -f docker-compose-postgres.yml up -d
+# default username is postgres
+
+version: '3.5'
+
+services:
+  db:
+    image: postgres:13.3
+    restart: always
+    volumes:
+      - postges-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: secret
+
+  adminer:
+    image: adminer:4.8.1-standalone
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  postges-data:
+    name: postges-data
