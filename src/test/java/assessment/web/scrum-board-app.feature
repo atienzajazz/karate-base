@@ -1,3 +1,4 @@
+@ignore
 Feature: Navigate Scrum Board App
 
   Background:
