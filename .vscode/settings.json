@@ -1,4 +1,5 @@
 {
   "editor.defaultFormatter": null,
-  "karateRunner.karateRunner.default": "TestParallel"
+  "karateRunner.karateRunner.default": "TestParallel",
+  "files.insertFinalNewline": true
 }
